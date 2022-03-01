@@ -2,8 +2,12 @@ package com.csmithswim.ipldashboard.model;
 
 import java.time.LocalDate;
 
+import javax.persistence.Entity;
+
+@Entity
 public class Match {
 
+    @Id
     private Long id;
     private String city;
     private LocalDate date;
